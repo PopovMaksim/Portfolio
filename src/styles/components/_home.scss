@@ -1,23 +1,7 @@
 #home {
-    position: relative;
     width: 100%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background: url("../../image/mountains.jpg") no-repeat center /cover;
-    z-index: 0;
-
-    &:after {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background: rgba(0,0,0,.8);
-        z-index: -1;
-    }
+    @include flex;
 
     h1 {
         font-size: 3rem;

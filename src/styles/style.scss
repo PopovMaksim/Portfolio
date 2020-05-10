@@ -2,10 +2,12 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 @import 'variables';
+@import 'mixins';
 @import 'components/sidebar';
 @import 'components/navbar';
 @import 'components/logo';
 @import 'components/home';
+@import 'components/contacts';
 
 body {
     margin: 0;
@@ -33,4 +35,5 @@ body {
 
 main {
     width: 100%;
+    background: url("../image/mountains.jpg") no-repeat center /cover;
 }
