@@ -1,0 +1,12 @@
+#sidebar {
+    margin: 0;
+    padding: 0;
+    width: 310px;
+    height: 100vh;
+    border-right: 2px solid $color-yellow;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}

@@ -1,0 +1,14 @@
+.navigation {
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    li {
+        margin: 0.5em;
+        a {
+            padding: 0.5em;
+            &:hover {
+                color: $color-yellow;
+                border-bottom: 1px solid $color-yellow;
+            }
+        }
+    }
+}

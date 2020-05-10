@@ -1,0 +1,9 @@
+#logo {
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem;
+
+    padding: 1em;   
+    &:hover {
+        text-shadow: 0 0 1em rgb(180, 162, 0);
+    } 
+}
