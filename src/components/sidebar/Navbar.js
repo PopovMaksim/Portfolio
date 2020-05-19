@@ -6,10 +6,42 @@ export default class Navbar extends Component {
             
                 <nav className='navigation'>
                     <ul>
-                        <li><a href="/">Главная</a></li>
-                        <li><a href="/about">Обо мне</a></li>
-                        <li><a href="/portfolio">Портфолио</a></li>
-                        <li><a href="/contacts">Контакты</a></li>
+                        <li>
+                            <a href="/">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                Главная
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/about">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                Обо мне
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/portfolio">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                Портфолио
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/contacts">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                Контакты
+                            </a>
+                        </li>
                     </ul>
                 </nav>
                

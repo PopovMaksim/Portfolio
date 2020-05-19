@@ -1,9 +1,63 @@
 #logo {
-    font-family: 'Pacifico', cursive;
-    font-size: 2rem;
+    height: 7.5rem;
+    margin: 3em 1em;
+    overflow: hidden;
+    position: relative;
+    filter: contrast(110%) brightness(190%);
+}
 
-    padding: 1em;   
-    &:hover {
-        text-shadow: 0 0 1em rgb(180, 162, 0);
-    } 
+.logo-name {
+    position: relative;
+    height: 2.5em;
+    background: black;
+
+    font-family: 'Pacifico', cursive;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 1em;
+    text-align: center;
+    color: transparent;
+    
+    &::before,
+    &::after {
+        content: "Maksim Popov";
+        color: white;
+        filter: blur(0.02em);
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding-top: .1em;
+        pointer-events: none;
+    }
+    &::after {
+        mix-blend-mode: difference;
+    }
+    &:focus { 
+        outline: none; 
+        border: 1px dotted white; 
+    }
+}
+.logo-gradient,
+.logo-spotlight {
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    pointer-events: none;
+    z-index: 10;  
+}
+.logo-gradient {
+    background: linear-gradient(45deg, $color-red, $color-blue);
+    mix-blend-mode: multiply;
+}
+.logo-spotlight {
+    animation: light 5s infinite linear;
+    background: 
+        radial-gradient(circle, white, transparent 25%) 0 0 / 25% 25%, 
+        radial-gradient(circle, white, black 25%) 50% 50% / 12.5% 12.5%;
+    top: -100%; left: -100%;
+    mix-blend-mode: color-dodge;
+}
+@keyframes light {
+    100% {
+        transform: translate3d(50%, 50%, 0);
+    }
 }
